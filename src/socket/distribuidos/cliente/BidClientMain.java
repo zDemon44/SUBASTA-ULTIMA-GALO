@@ -106,7 +106,7 @@ public class BidClientMain {
             case BID_ACK:
                 if (msg.payload.startsWith("ACCEPTED")) System.out.println("Puja registrada.");
                 else if (msg.payload.startsWith("REJECTED")) System.out.println("Oferta rechazada: " + msg.payload.split(":" )[1]);
-                else if (msg.payload.startsWith("REDIRECTED")) System.out.println("Redirigiendo al líder...");
+                else if (msg.payload.startsWith("REDIRECTED")) System.out.println("Puja enviada");
                 else if (msg.payload.startsWith("SUBASTA_CERRADA")) System.out.println("La subasta ya se cerró.");
                 else System.out.println("Info: " + msg.payload);
                 break;
