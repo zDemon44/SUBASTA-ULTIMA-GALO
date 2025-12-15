@@ -93,7 +93,7 @@ public class BidClientMain {
             case ANNOUNCE:
                 actualizarEstadoLocal(msg.payload);
                 long left = calcularTiempoRestante();
-                System.out.println("\nNUEVA OFERTA: $" + currentHighest + " — Cliente " + currentWinner + " (Quedan " + left + " s)");
+                System.out.println("\nNUEVA OFERTA: De $" + currentHighest + " del cliente " + currentWinner + " (Quedan " + left + " s)");
                 break;
 
             case WINNER:

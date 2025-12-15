@@ -402,7 +402,7 @@ public class NodeServer {
         try{
             long rest = startTime > 0 ? (AUCTION_DURATION_MILLIS - (System.currentTimeMillis() - startTime))/1000 : 60;
             if(rest < 0) rest = 0;
-            log("Nodo activo:"+getCoordinator()+" | Máx:$"+highest+"(Va ganando el cliente "+highestBidder+") | Tiempo:"+rest+" s | Activo="+activeServer);
+            log("Nodo activo:"+getCoordinator()+" | Oferta Mayor:$"+highest+"(Va ganando el cliente "+highestBidder+") | Tiempo:"+rest+" s | Activo="+activeServer);
         }finally{auctionLock.unlock();}
     }
 }
